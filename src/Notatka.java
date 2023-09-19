@@ -1,3 +1,12 @@
+/**
+ * Klasa: Notatka
+ * opis: klasa przechowująca informacje o notatce
+ * pola: licznikNotatek - pole statyczne przechowujące liczbę utworzonych obiektów
+ *         unikatowyNumer - nr notatki
+ *         tytul - tytul notatki
+ *         tresc - tresc notatki
+ * autor: 00000000000000000000
+ */
 public class Notatka {
     private static int licznikNotatek;
     private int unikatowyNumer;
