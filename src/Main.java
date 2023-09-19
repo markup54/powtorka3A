@@ -20,10 +20,7 @@ public class Main {
     }
     public static HashSet<Integer> zapiszDoZbioru(ArrayList<Integer> liczbyDoZapisu){
         HashSet<Integer> zbior = new HashSet<>();
-        for (Integer liczba: liczbyDoZapisu
-             ) {
-            zbior.add(liczba);
-        }
+        zbior.addAll(liczbyDoZapisu);
         return zbior;
 
     }
