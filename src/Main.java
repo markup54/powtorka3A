@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -61,5 +62,21 @@ public class Main {
                 System.out.println(liczba);
             }
         }
+        System.out.println("testowanie klasy Osoba");
+        System.out.println("Liczba zarejestrowanych osób to"+Osoba.liczbaObiektow);
+        Osoba osoba1 =new Osoba();
+        String imie;
+        int id;
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Podaj imię");
+        imie = klawiatura.next();
+        System.out.println("Podaj id");
+        id = klawiatura.nextInt();
+        Osoba osoba2 = new Osoba(id,imie);
+        Osoba osoba3 = new Osoba(osoba2);
+        osoba1.wypiszDane("Jan");
+        osoba2.wypiszDane("Jan");
+        osoba3.wypiszDane("Jan");
+        System.out.println("Liczba zarejestrowanych osób to"+Osoba.liczbaObiektow);
     }
 }
