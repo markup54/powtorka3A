@@ -78,5 +78,12 @@ public class Main {
         osoba2.wypiszDane("Jan");
         osoba3.wypiszDane("Jan");
         System.out.println("Liczba zarejestrowanych osób to"+Osoba.liczbaObiektow);
+        System.out.println("testowanie klasy Notatka");
+        Notatka notatka1 = new Notatka("przygotowanie do egzaminu", "nauczyć się algorytmów, aplikacji mobilnych desktopowych i webowych");
+        Notatka notatka2 = new Notatka("relaks","wyjśc do kina i na spacer z psem");
+        notatka1.wypiszTytuTresc();
+        notatka2.wypiszTytuTresc();
+        notatka1.wypiszWszystko();
+        notatka2.wypiszWszystko();
     }
 }
